@@ -3,131 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дисклеймер — ave production</title>
+  <title>Disclaimer — ave tool</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 1200px; margin: 0 auto; }
+    .legal-column { }
+    .legal-lang { font-size: 12px; letter-spacing: 0.1em; color: var(--color-text-muted); margin-bottom: 24px; text-transform: uppercase; }
+    .legal-column h2 { font-size: 18px; font-weight: 600; margin-top: 32px; margin-bottom: 12px; color: var(--color-text); }
+    .legal-column h2:first-of-type { margin-top: 0; }
+    .legal-column p { font-size: 14px; line-height: 1.7; color: var(--color-text-muted); }
+    @media (max-width: 900px) { .legal-grid { grid-template-columns: 1fr; gap: 48px; } }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header" id="header">
-    <div class="container">
-      <div class="header-content">
-        <a href="index.html" class="logo">
-          <div class="logo-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-              <polyline points="2 17 12 22 22 17"></polyline>
-              <polyline points="2 12 12 17 22 12"></polyline>
-            </svg>
-          </div>
-          <span>ave production</span>
-        </a>
+  <nav class="legal-nav">
+    <a href="index.html" class="back-link">← ave tool</a>
+  </nav>
 
-        <nav class="nav-links">
-          <a href="index.html" class="nav-link">Главная</a>
-          <a href="terms.html" class="nav-link">Условия</a>
-          <a href="privacy.html" class="nav-link">Конфиденциальность</a>
-          <a href="disclaimer.html" class="nav-link active">Дисклеймер</a>
-        </nav>
-
-        <div class="header-right">
-          <button class="lang-toggle" id="langToggle">RU / EN</button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content -->
   <main>
     <section class="page-hero">
       <div class="container">
-        <h1 class="page-title">Дисклеймер</h1>
-        <p class="page-subtitle">Важная информация об ответственности</p>
+        <h1 class="page-title">Disclaimer</h1>
+        <p class="page-subtitle">Отказ от ответственности</p>
       </div>
     </section>
 
     <section class="page-content">
       <div class="container">
-        <div class="content-card warning-card">
-          <h2>⚠️ Важно</h2>
-          <p>Наши услуги предоставляются в соответствии с Правилами Discord и Majestic RP. Вы несете полную ответственность за использование наших ботов в соответствии с этими правилами.</p>
-        </div>
-
-        <div class="content-card">
-          <h2>1. Отсутствие гарантий</h2>
-          <p>Услуги ave production предоставляются на условиях "как есть" ("as-is"). Мы не гарантируем непрерывную или безошибочную работу ботов. Хотя мы стремимся обеспечить высокое качество обслуживания, возможны технические сбои.</p>
-        </div>
-
-        <div class="content-card">
-          <h2>2. Ограничение ответственности</h2>
-          <p>ave production не несет ответственности за:</p>
-          <ul>
-            <li>Потерю доступа к вашему Discord серверу</li>
-            <li>Временные сбои или недоступность сервиса</li>
-            <li>Потерю данных (при условии, что это не связано с нашей прямой ошибкой)</li>
-            <li>Косвенные убытки от использования наших услуг</li>
-            <li>Действия Discord, Majestic RP или других третьих сторон</li>
-          </ul>
-        </div>
-
-        <div class="content-card">
-          <h2>3. Обновления и изменения</h2>
-          <p>Мы оставляем право на изменение или прекращение функций ботов без предварительного уведомления. Обновления будут применяться автоматически.</p>
-        </div>
-
-        <div class="content-card">
-          <h2>4. Возмещение убытков</h2>
-          <p>Максимальное возмещение за потери, вызванные нашими услугами, не превышает стоимость одного месяца вашей подписки.</p>
-        </div>
-
-        <div class="content-card">
-          <h2>5. Соответствие правилам</h2>
-          <p>Вы гарантируете, что использование наших ботов соответствует:</p>
-          <ul>
-            <li>Правилам Сообщества Discord</li>
-            <li>Условиям использования Majestic RP</li>
-            <li>Применимому местному законодательству</li>
-            <li>Всем применимым условиям третьих сторон</li>
-          </ul>
-        </div>
-
-        <div class="content-card">
-          <h2>6. Запрещенная деятельность</h2>
-          <p>Вы не должны использовать наши услуги для:</p>
-          <ul>
-            <li>Рассылки спама или вредоноса контента</li>
-            <li>Взлома или несанкционированного доступа</li>
-            <li>Нарушения прав интеллектуальной собственности</li>
-            <li>Преследования или дискриминации</li>
-            <li>Незаконной деятельности</li>
-          </ul>
-        </div>
-
-        <div class="content-card">
-          <h2>7. Третьи сервисы</h2>
-          <p>Наши боты интегрируются с Discord и другими сервисами. Мы не контролируем эти сервисы и не несем ответственности за их сбои или изменения политики.</p>
-        </div>
-
-        <div class="content-card">
-          <h2>8. Отказ от ответственности</h2>
-          <p>Используя наши услуги, вы полностью осознаете и принимаете этот дисклеймер. Если вы не согласны с любой его части, пожалуйста, не используйте наши услуги.</p>
+        <div class="legal-grid">
+          <div class="legal-column">
+            <div class="legal-lang">Russian</div>
+            
+            <h2>Назначение инструментов</h2>
+            <p>Все системы ave tool предназначены для автоматизации и повышения удобства процессов. Использование осуществляется по усмотрению пользователя.</p>
+            
+            <h2>Отсутствие гарантий</h2>
+            <p>ave tool не гарантирует достижение конкретных результатов, преимуществ или исходов при использовании систем.</p>
+            
+            <h2>Третьи стороны</h2>
+            <p>ave tool не несёт ответственности за решения, действия или санкции со стороны сторонних платформ, сервисов или игровых проектов.</p>
+          </div>
+          
+          <div class="legal-column">
+            <div class="legal-lang">English</div>
+            
+            <h2>Purpose of Tools</h2>
+            <p>All ave tool systems are intended for automation and convenience purposes. Usage is at the user's discretion.</p>
+            
+            <h2>No Guarantees</h2>
+            <p>ave tool does not guarantee specific outcomes, advantages, or results from using the systems.</p>
+            
+            <h2>Third Parties</h2>
+            <p>ave tool is not responsible for decisions, actions, or penalties imposed by third-party platforms, services, or games.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-links">
-        <a href="index.html">Главная</a>
-        <a href="terms.html">Условия</a>
-        <a href="privacy.html">Конфиденциальность</a>
-        <a href="disclaimer.html">Дисклеймер</a>
+      <div class="footer-legal">
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/disclaimer.html">Disclaimer</a>
       </div>
-      <p>&copy; 2026 ave production. Все права защищены.</p>
+      <p style="margin-top: 16px;">&copy; 2026 ave tool</p>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
