@@ -42,10 +42,47 @@
         grid-template-columns: 1fr;
       }
     }
+    .legal-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+
+  height: 64px;
+  padding: 0 32px;
+
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.back-button {
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.75;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  opacity: 1;
+  transform: translateX(-2px);
+}
+
   </style>
 </head>
 
 <body>
+  <div class="legal-nav">
+  <a href="index.html" class="back-button">
+    ← Back to main site
+  </a>
+</div>
+
 
 <section class="legal-container">
   <div class="legal-title">
