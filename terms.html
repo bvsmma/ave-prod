@@ -1,198 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>Terms of Service — ave tool</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Terms of Service for ave tool automation systems." />
-  <link rel="stylesheet" href="style.css" />
-
-  <style>
-    
-    .legal-container {
-      max-width: 1200px;
-      margin: 120px auto;
-      padding: 0 24px;
-    }
-    .legal-title {
-      text-align: center;
-      margin-bottom: 64px;
-    }
-    .legal-title h1 {
-      margin-bottom: 8px;
-    }
-    .legal-title p {
-      opacity: 0.6;
-    }
-    .legal-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-    }
-    .legal-column h2 {
-      margin-top: 32px;
-      font-size: 18px;
-    }
-    .legal-column p {
-      margin-top: 12px;
-      line-height: 1.6;
-      opacity: 0.85;
-    }
-    .legal-lang {
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      opacity: 0.5;
-      margin-bottom: 16px;
-    }
-    @media (max-width: 900px) {
-      .legal-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .legal-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-  display: flex;
-  align-items: center;
-
-  height: 64px;
-  padding: 0 32px;
-
-  background: rgba(10, 10, 10, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.back-button {
-  font-size: 14px;
-  text-decoration: none;
-  color: inherit;
-  opacity: 0.75;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.back-button:hover {
-  opacity: 1;
-  transform: translateX(-2px);
-}
-
-    
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Условия использования — ave production</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
- <div class="legal-nav">
-  <a href="index.html" class="back-button">
-    ← Back to main site
-  </a>
-</div>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <span>ave production</span>
+        </a>
 
-  
-<section class="legal-container">
-  <div class="legal-title">
-    <h1>Terms of Service</h1>
-    <p>Условия использования · Terms of Use</p>
-  </div>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Главная</a>
+          <a href="terms.html" class="nav-link active">Условия</a>
+          <a href="privacy.html" class="nav-link">Конфиденциальность</a>
+          <a href="disclaimer.html" class="nav-link">Дисклеймер</a>
+        </nav>
 
-  <div class="legal-grid">
-
-    <!-- RU -->
-    <div class="legal-column">
-      <div class="legal-lang">RUSSIAN</div>
-
-      <h2>1. Общие положения</h2>
-      <p>
-        ave tool предоставляет программные решения и инструменты автоматизации
-        на условиях временной аренды. Все продукты являются цифровыми системами,
-        предназначенными для использования в Discord-инфраструктуре.
-      </p>
-
-      <h2>2. Характер предоставления услуг</h2>
-      <p>
-        Все системы предоставляются «как есть» (as is).
-        Аренда не подразумевает передачу прав собственности,
-        исходного кода или исключительных прав.
-      </p>
-
-      <h2>3. Ответственность пользователя</h2>
-      <p>
-        Пользователь самостоятельно принимает решения о способе
-        и целях использования арендуемых систем и несёт полную
-        ответственность за их применение.
-      </p>
-
-      <h2>4. Ограничение ответственности</h2>
-      <p>
-        ave tool не несёт ответственности за возможные ограничения,
-        санкции, блокировки или иные действия со стороны третьих платформ,
-        включая игровые проекты и онлайн-сервисы.
-      </p>
-
-      <h2>5. Доступность и обслуживание</h2>
-      <p>
-        Мы стремимся обеспечивать стабильную работу систем,
-        однако не гарантируем абсолютную непрерывность сервиса.
-        Возможны временные перерывы, обновления и техническое обслуживание.
-      </p>
-
-      <h2>6. Прекращение доступа</h2>
-      <p>
-        ave tool оставляет за собой право приостановить или прекратить
-        доступ к системам в случае нарушения условий или злоупотреблений.
-      </p>
+        <div class="header-right">
+          <button class="lang-toggle" id="langToggle">RU / EN</button>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <!-- EN -->
-    <div class="legal-column">
-      <div class="legal-lang">ENGLISH</div>
+  <!-- Main Content -->
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">Условия использования</h1>
+        <p class="page-subtitle">Последнее обновление: 2026</p>
+      </div>
+    </section>
 
-      <h2>1. General Terms</h2>
-      <p>
-        ave tool provides software solutions and automation tools
-        on a temporary rental basis. All products are digital systems
-        designed for use within Discord infrastructure.
-      </p>
+    <section class="page-content">
+      <div class="container">
+        <div class="content-card">
+          <h2>1. Принятие условий</h2>
+          <p>Используя услуги ave production, вы соглашаетесь со всеми условиями настоящего Соглашения. Если вы не согласны с какими-либо из этих условий, пожалуйста, не используйте наши услуги.</p>
+        </div>
 
-      <h2>2. Nature of Service</h2>
-      <p>
-        All services are provided on an “as is” basis.
-        Rental does not grant ownership, source code access,
-        or exclusive intellectual property rights.
-      </p>
+        <div class="content-card">
+          <h2>2. Описание услуг</h2>
+          <p>ave production предоставляет Discord-боты и скрипты для игровых сообществ на Majestic RP. Наши услуги включают:</p>
+          <ul>
+            <li>Family Bot для управления семьей</li>
+            <li>Alliance Security Bot для защиты союзов</li>
+            <li>MCL AutoReg Bot для автоматической регистрации</li>
+            <li>Техническую поддержку и обновления</li>
+          </ul>
+        </div>
 
-      <h2>3. User Responsibility</h2>
-      <p>
-        The user independently determines how the rented systems are used
-        and bears full responsibility for their application.
-      </p>
+        <div class="content-card">
+          <h2>3. Платежи и подписки</h2>
+          <p>Все подписки требуют предварительной оплаты. Мы принимаем криптовалюту (BTC, ETH, USDT) и другие безопасные способы оплаты. После подтверждения платежа вам предоставляется доступ к услугам на указанный период.</p>
+        </div>
 
-      <h2>4. Limitation of Liability</h2>
-      <p>
-        ave tool is not responsible for any restrictions, sanctions,
-        suspensions, or actions taken by third-party platforms,
-        including games or online services.
-      </p>
+        <div class="content-card">
+          <h2>4. Гарантия и возврат средств</h2>
+          <p>Мы гарантируем работоспособность наших ботов. Если бот не соответствует заявленному функционалу, мы обязуемся вернуть полную стоимость подписки в течение 24 часов после обращения.</p>
+        </div>
 
-      <h2>5. Availability and Maintenance</h2>
-      <p>
-        We strive to maintain stable operation,
-        but uninterrupted availability is not guaranteed.
-        Temporary interruptions or maintenance may occur.
-      </p>
+        <div class="content-card">
+          <h2>5. Запрещенное использование</h2>
+          <p>Запрещается использовать наши услуги для:</p>
+          <ul>
+            <li>Нарушения правил Discord или Majestic RP</li>
+            <li>Создания ботов для других целей без разрешения</li>
+            <li>Распространения, продажи или передачи доступа третьим лицам</li>
+            <li>Попыток обойти или взломать системы безопасности</li>
+          </ul>
+        </div>
 
-      <h2>6. Access Termination</h2>
-      <p>
-        ave tool reserves the right to suspend or terminate access
-        in cases of misuse or violation of these terms.
-      </p>
+        <div class="content-card">
+          <h2>6. Прекращение услуг</h2>
+          <p>Мы вправе прекратить предоставление услуг в случае нарушения этих условий, незаконного использования или других причин, предусмотренных местным законодательством.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>7. Ограничение ответственности</h2>
+          <p>ave production не несет ответственности за косвенные убытки, потерю данных или доход, связанные с использованием наших услуг, кроме случаев, предусмотренных законодательством.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>8. Изменение условий</h2>
+          <p>Мы оставляем право на изменение этих условий в любое время. Уведомление об изменениях будет размещено на нашем сайте. Продолжение использования услуг означает принятие новых условий.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+        <a href="terms.html">Условия</a>
+        <a href="privacy.html">Конфиденциальность</a>
+        <a href="disclaimer.html">Дисклеймер</a>
+      </div>
+      <p>&copy; 2026 ave production. Все права защищены.</p>
     </div>
+  </footer>
 
-  </div>
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
