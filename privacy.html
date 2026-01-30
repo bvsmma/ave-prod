@@ -1,160 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>Privacy Policy — ave tool</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Privacy Policy for ave tool automation systems." />
-  <link rel="stylesheet" href="style.css" />
-
-  <style>
-    .legal-container {
-      max-width: 1200px;
-      margin: 120px auto;
-      padding: 0 24px;
-    }
-    .legal-title {
-      text-align: center;
-      margin-bottom: 64px;
-    }
-    .legal-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-    }
-    .legal-column h2 {
-      margin-top: 32px;
-      font-size: 18px;
-    }
-    .legal-column p {
-      margin-top: 12px;
-      line-height: 1.6;
-      opacity: 0.85;
-    }
-    .legal-lang {
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      opacity: 0.5;
-      margin-bottom: 16px;
-    }
-    @media (max-width: 900px) {
-      .legal-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-.legal-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-  display: flex;
-  align-items: center;
-
-  height: 64px;
-  padding: 0 32px;
-
-  background: rgba(10, 10, 10, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.back-button {
-  font-size: 14px;
-  text-decoration: none;
-  color: inherit;
-  opacity: 0.75;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.back-button:hover {
-  opacity: 1;
-  transform: translateX(-2px);
-}
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Политика конфиденциальности — ave production</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="legal-nav">
-  <a href="index.html" class="back-button">
-    ← Back to main site
-  </a>
-</div>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <span>ave production</span>
+        </a>
 
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Главная</a>
+          <a href="terms.html" class="nav-link">Условия</a>
+          <a href="privacy.html" class="nav-link active">Конфиденциальность</a>
+          <a href="disclaimer.html" class="nav-link">Дисклеймер</a>
+        </nav>
 
-<section class="legal-container">
-  <div class="legal-title">
-    <h1>Privacy Policy</h1>
-    <p>Политика конфиденциальности · Privacy Policy</p>
-  </div>
-
-  <div class="legal-grid">
-
-    <!-- RU -->
-    <div class="legal-column">
-      <div class="legal-lang">RUSSIAN</div>
-
-      <h2>1. Сбор данных</h2>
-      <p>
-        Для функционирования систем ave tool может обрабатывать
-        технические идентификаторы, включая Discord ID,
-        ID серверов и служебные параметры.
-      </p>
-
-      <h2>2. Использование данных</h2>
-      <p>
-        Собранные данные используются исключительно для предоставления,
-        поддержки и корректной работы арендуемых систем.
-      </p>
-
-      <h2>3. Хранение данных</h2>
-      <p>
-        Информация хранится только в течение срока,
-        необходимого для оказания услуг и выполнения обязательств.
-      </p>
-
-      <h2>4. Передача третьим лицам</h2>
-      <p>
-        ave tool не продаёт, не передаёт и не раскрывает
-        пользовательские данные третьим лицам.
-      </p>
+        <div class="header-right">
+          <button class="lang-toggle" id="langToggle">RU / EN</button>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <!-- EN -->
-    <div class="legal-column">
-      <div class="legal-lang">ENGLISH</div>
+  <!-- Main Content -->
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">Политика конфиденциальности</h1>
+        <p class="page-subtitle">Как мы защищаем ваши данные</p>
+      </div>
+    </section>
 
-      <h2>1. Data Collection</h2>
-      <p>
-        To operate the services, ave tool may process
-        technical identifiers including Discord IDs,
-        server IDs, and service-related metadata.
-      </p>
+    <section class="page-content">
+      <div class="container">
+        <div class="content-card">
+          <h2>1. Сбор информации</h2>
+          <p>Мы собираем следующую информацию:</p>
+          <ul>
+            <li>Discord ID и имя пользователя</li>
+            <li>Email адрес (если предоставлен)</li>
+            <li>История покупок и платежей</li>
+            <li>Логи использования ботов</li>
+            <li>IP адрес и данные браузера</li>
+          </ul>
+        </div>
 
-      <h2>2. Data Usage</h2>
-      <p>
-        Collected data is used solely to provide,
-        maintain, and ensure proper functionality
-        of the rented systems.
-      </p>
+        <div class="content-card">
+          <h2>2. Использование данных</h2>
+          <p>Ваши данные используются для:</p>
+          <ul>
+            <li>Предоставления и улучшения услуг</li>
+            <li>Обработки платежей</li>
+            <li>Связи с вами по поводу вашей подписки</li>
+            <li>Предотвращения мошенничества и злоупотреблений</li>
+            <li>Анализа использования сервиса</li>
+          </ul>
+        </div>
 
-      <h2>3. Data Retention</h2>
-      <p>
-        Information is retained only for the duration
-        necessary to deliver the services and obligations.
-      </p>
+        <div class="content-card">
+          <h2>3. Защита данных</h2>
+          <p>Мы используем современные методы шифрования для защиты ваших персональных данных. Все платежи обрабатываются через защищенные каналы. Мы не передаем ваши данные третьим лицам без вашего согласия.</p>
+        </div>
 
-      <h2>4. Third Parties</h2>
-      <p>
-        ave tool does not sell, share, or disclose
-        user data to third parties.
-      </p>
+        <div class="content-card">
+          <h2>4. Cookies и отслеживание</h2>
+          <p>Наш сайт использует cookies для сохранения вашего языка и предпочтений. Вы можете отключить cookies в настройках браузера.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>5. Ваши права</h2>
+          <p>Вы имеете право:</p>
+          <ul>
+            <li>Доступа к своим персональным данным</li>
+            <li>Исправления неправильных данных</li>
+            <li>Удаления своего аккаунта и связанных данных</li>
+            <li>Отозвания согласия на обработку данных</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h2>6. Третьи лица</h2>
+          <p>Мы не продаем ваши данные третьим лицам. Мы можем использовать сервисы аналитики для лучшего понимания использования сервиса.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>7. Изменения политики</h2>
+          <p>Мы оставляем право на изменение этой политики. Значительные изменения будут уведомлены через email.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>8. Контакты</h2>
+          <p>Если у вас есть вопросы о защите ваших данных, свяжитесь с нами через Discord или Telegram.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+        <a href="terms.html">Условия</a>
+        <a href="privacy.html">Конфиденциальность</a>
+        <a href="disclaimer.html">Дисклеймер</a>
+      </div>
+      <p>&copy; 2026 ave production. Все права защищены.</p>
     </div>
+  </footer>
 
-  </div>
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
