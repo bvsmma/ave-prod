@@ -8,10 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    body {
-  padding-top: 96px;
-}
-
+    
     .legal-container {
       max-width: 1200px;
       margin: 120px auto;
@@ -52,16 +49,30 @@
         grid-template-columns: 1fr;
       }
     }
-    .back-button {
-  position: fixed;
-  top: 32px;
-  left: 32px;
+    .legal-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+
+  height: 64px;
+  padding: 0 32px;
+
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.back-button {
   font-size: 14px;
   text-decoration: none;
   color: inherit;
-  opacity: 0.6;
+  opacity: 0.75;
   transition: opacity 0.2s ease, transform 0.2s ease;
-  z-index: 1000;
 }
 
 .back-button:hover {
@@ -69,15 +80,18 @@
   transform: translateX(-2px);
 }
 
+    
   </style>
 </head>
 
 <body>
-  <a href="index.html" class="back-button" onclick="history.length > 1 && history.back(); return false;">
-  ← Back to main site
+ <div class="legal-nav">
+  <a href="index.html" class="back-button">
+    ← Back to main site
   </a>
+</div>
 
-
+  
 <section class="legal-container">
   <div class="legal-title">
     <h1>Terms of Service</h1>
