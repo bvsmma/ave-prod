@@ -1196,6 +1196,7 @@ section {
   transition: transform 0.3s ease, opacity 0.3s ease;
   margin: 20px auto;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .modal-overlay.open .modal {
@@ -1230,7 +1231,8 @@ section {
 }
 
 .modal-content {
-  overflow-y: visible;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   flex: 1;
 }
 
