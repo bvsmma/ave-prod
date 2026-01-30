@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ave production — Discord-боты и скрипты для Majestic RP</title>
+  <meta name="description" content="Продвинутые решения для регистрации MCL, управления семьями и защиты союзов. Автоматизация Discord для Majestic RP.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span>ave production</span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="#products" class="nav-link" data-i18n="nav.products">Продукты</a>
+        <a href="#features" class="nav-link" data-i18n="nav.features">Преимущества</a>
+        <a href="#how-it-works" class="nav-link" data-i18n="nav.howItWorks">Подключение</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Контакты</a>
+      </nav>
+      
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="langText">EN</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav.getAccess">Получить доступ</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav class="mobile-nav">
+        <a href="#products" class="mobile-nav-link" data-i18n="nav.products">Продукты</a>
+        <a href="#features" class="mobile-nav-link" data-i18n="nav.features">Преимущества</a>
+        <a href="#how-it-works" class="mobile-nav-link" data-i18n="nav.howItWorks">Подключение</a>
+        <a href="#contact" class="mobile-nav-link" data-i18n="nav.contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge" data-i18n="hero.badge">Премиум решения для Majestic RP</div>
+        <h1 class="hero-title" data-i18n="hero.title">Discord-боты и скрипты для Majestic RP</h1>
+        <p class="hero-description" data-i18n="hero.description">Профессиональные решения для автоматизации игрового процесса: управление семьями, защита союзов, авто-регистрация МЦЛ. Проверенные инструменты с гарантией стабильной работы 24/7.</p>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value">4</div>
+            <div class="stat-label" data-i18n="hero.stats.bots">бота в работе</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-value">3</div>
+            <div class="stat-label" data-i18n="hero.stats.families">семьи обслужено</div>
+          </div>
+        </div>
+        
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary btn-lg" data-i18n="hero.viewProducts">Смотреть продукты</a>
+          <a href="#contact" class="btn btn-outline btn-lg" data-i18n="hero.contactUs">Связаться с нами</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Marquee - Infinite seamless -->
+    <div class="marquee-container">
+      <div class="marquee">
+        <div class="marquee-content">
+          <span class="marquee-item">Discord Bots</span>
+          <span class="marquee-item">Family Management</span>
+          <span class="marquee-item">Alliance Security</span>
+          <span class="marquee-item">MCL AutoReg</span>
+          <span class="marquee-item">Majestic RP</span>
+          <span class="marquee-item">Premium Support</span>
+          <span class="marquee-item">24/7 Automation</span>
+          <span class="marquee-item">Secure & Reliable</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span class="marquee-item">Discord Bots</span>
+          <span class="marquee-item">Family Management</span>
+          <span class="marquee-item">Alliance Security</span>
+          <span class="marquee-item">MCL AutoReg</span>
+          <span class="marquee-item">Majestic RP</span>
+          <span class="marquee-item">Premium Support</span>
+          <span class="marquee-item">24/7 Automation</span>
+          <span class="marquee-item">Secure & Reliable</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="products.title">Наши продукты</h2>
+        <p class="section-description" data-i18n="products.description">Выберите подходящее решение для автоматизации вашего Discord-сервера</p>
+      </div>
+      
+      <!-- Subscription Toggle -->
+      <div class="subscription-toggle">
+        <button class="sub-btn active" data-months="1" data-i18n="products.subscription.1month">Подписка на 1 месяц</button>
+        <button class="sub-btn" data-months="3">
+          <span data-i18n="products.subscription.3months">Подписка на 3 месяца</span>
+          <span class="discount-badge">-22%</span>
+        </button>
+        <button class="sub-btn" data-months="6">
+          <span data-i18n="products.subscription.6months">Подписка на 6 месяцев</span>
+          <span class="discount-badge">-35%</span>
+        </button>
+        <button class="sub-btn" data-months="12">
+          <span data-i18n="products.subscription.12months">Годовая подписка</span>
+          <span class="discount-badge">-48%</span>
+        </button>
+      </div>
+      
+      <!-- Product Cards -->
+      <div class="products-grid">
+        <!-- Family Bot -->
+        <div class="product-card popular">
+          <div class="popular-badge" data-i18n="products.popular">Популярный</div>
+          <div class="product-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="product-title">Family Bot</h3>
+          <p class="product-description" data-i18n="products.familyBot.description">Модульная экосистема для управления Discord-сервером семьи на Majestic RP. Автоматизирует заявки, повышения, отчеты за MCL и капты. Полная настройка под вашу иерархию.</p>
+          <ul class="product-features">
+            <li data-i18n="products.familyBot.features.0">Отчеты за MCL, капты и мероприятия</li>
+            <li data-i18n="products.familyBot.features.1">Модуль Академии и повышений</li>
+            <li data-i18n="products.familyBot.features.2">Голосовая активность с защитой от абуза</li>
+            <li data-i18n="products.familyBot.features.3">Магазин семьи с наградами</li>
+            <li data-i18n="products.familyBot.features.4">Полное логирование действий</li>
+            <li data-i18n="products.familyBot.features.5">Персональная настройка под ключ</li>
+          </ul>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-value" data-product="family" data-base="30">$30</span>
+              <span class="price-period"></span>
+            </div>
+            <button class="btn btn-icon" data-modal="family" aria-label="Подробнее">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Alliance Security Bot -->
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="product-title">Alliance Security Bot</h3>
+          <p class="product-description" data-i18n="products.allianceBot.description">Система защиты союзного сервера на принципе Zero Trust. Автоматический контроль доступа, исключение скаутов и посторонних. Состав всегда соответствует реальности.</p>
+          <ul class="product-features">
+            <li data-i18n="products.allianceBot.features.0">Мгновенная проверка при входе</li>
+            <li data-i18n="products.allianceBot.features.1">Мониторинг смены ролей в реальном времени</li>
+            <li data-i18n="products.allianceBot.features.2">Whitelist для соло-игроков</li>
+            <li data-i18n="products.allianceBot.features.3">Индивидуальные допуски для семей</li>
+            <li data-i18n="products.allianceBot.features.4">Защита от ложных срабатываний</li>
+            <li data-i18n="products.allianceBot.features.5">Полная автоматизация модерации</li>
+          </ul>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-value" data-product="alliance" data-base="20">$20</span>
+              <span class="price-period"></span>
+            </div>
+            <button class="btn btn-icon" data-modal="alliance" aria-label="Подробнее">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- MCL AutoReg Bot -->
+        <div class="product-card">
+          <div class="product-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="product-title">MCL AutoReg Bot</h3>
+          <p class="product-description" data-i18n="products.mclBot.description">Мгновенная регистрация на турнирах MCL. Бот отправляет заявку в первые миллисекунды после открытия канала. Всегда быстрее любого игрока, даже с идеальным пингом.</p>
+          <ul class="product-features">
+            <li data-i18n="products.mclBot.features.0">Мгновенная реакция на открытие канала</li>
+            <li data-i18n="products.mclBot.features.1">Проверка каждые 0.1-0.2 секунды</li>
+            <li data-i18n="products.mclBot.features.2">Многопоточность (несколько серверов)</li>
+            <li data-i18n="products.mclBot.features.3">Интеллектуальное упреждение</li>
+            <li data-i18n="products.mclBot.features.4">Настройка шаблона сообщения</li>
+            <li data-i18n="products.mclBot.features.5">Консольные логи в реальном времени</li>
+          </ul>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price-value" data-product="mcl" data-base="20">$20</span>
+              <span class="price-period"></span>
+            </div>
+            <button class="btn btn-icon" data-modal="mcl" aria-label="Подробнее">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="features.title">Наши преимущества</h2>
+        <p class="section-description" data-i18n="features.description">Почему клиенты выбирают ave production</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="features.support.title">Поддержка</h3>
+          <p class="feature-description" data-i18n="features.support.description">Оперативная помощь и консультации по всем вопросам</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="features.flexible.title">Гибкие подписки</h3>
+          <p class="feature-description" data-i18n="features.flexible.description">Выбирайте срок от месяца до года с выгодными скидками</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="feature-title" data-i18n="features.security.title">Безопасность</h3>
+          <p class="feature-description" data-i18n="features.security.description">Защита данных и стабильная работа без сбоев</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="howItWorks.title">Как проходит подключение</h2>
+        <p class="section-description" data-i18n="howItWorks.description">Три простых шага до рабочего бота</p>
+      </div>
+      
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-icon-wrapper">
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <div class="step-number">1</div>
+          </div>
+          <h3 class="step-title" data-i18n="howItWorks.step1.title">Заходите в Discord</h3>
+          <p class="step-description" data-i18n="howItWorks.step1.description">Присоединяйтесь к нашему серверу и получайте доступ к каталогу</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-icon-wrapper">
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="step-number">2</div>
+          </div>
+          <h3 class="step-title" data-i18n="howItWorks.step2.title">Создаете тикет в #buy-script</h3>
+          <p class="step-description" data-i18n="howItWorks.step2.description">Указываете желаемый скрипт и автоматически попадаете в приватный диалог с поддержкой</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-icon-wrapper">
+            <div class="step-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div class="step-number">3</div>
+          </div>
+          <h3 class="step-title" data-i18n="howItWorks.step3.title">Получаете бота и гарантию</h3>
+          <p class="step-description" data-i18n="howItWorks.step3.description">Выдаем инструкцию, подключаем бота, проверяем логи и даем гарантию работоспособности</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="faq.title">Часто задаваемые вопросы</h2>
+        <p class="section-description" data-i18n="faq.description">Ответы на популярные вопросы о наших продуктах</p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question" data-i18n="faq.q1.question">Как быстро подключается бот после оплаты?</h3>
+          <p class="faq-answer" data-i18n="faq.q1.answer">Подключение бота занимает от 5 до 30 минут после подтверждения оплаты. Мы настраиваем бота под ваш сервер, проверяем работоспособность и выдаем полную инструкцию по использованию.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3 class="faq-question" data-i18n="faq.q2.question">Что делать, если бот перестал работать?</h3>
+          <p class="faq-answer" data-i18n="faq.q2.answer">Создайте тикет в Discord или напишите в Telegram. Мы оперативно диагностируем проблему и восстановим работу бота. Время простоя компенсируется дополнительными днями подписки.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3 class="faq-question" data-i18n="faq.q3.question">Можно ли перенести бота на другой сервер?</h3>
+          <p class="faq-answer" data-i18n="faq.q3.answer">Да, перенос бота на другой Discord-сервер возможен в рамках активной подписки. Обратитесь в поддержку, и мы выполним миграцию без потери данных и настроек.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3 class="faq-question" data-i18n="faq.q4.question">Какие способы оплаты вы принимаете?</h3>
+          <p class="faq-answer" data-i18n="faq.q4.answer">Мы принимаем криптовалюту (BTC, ETH, USDT), банковские карты через безопасные платежные системы. Детали оплаты обсуждаются в приватном тикете.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3 class="faq-question" data-i18n="faq.q5.question">Есть ли тестовый период?</h3>
+          <p class="faq-answer" data-i18n="faq.q5.answer">Мы не предоставляем тестовый период, но даем полную гарантию возврата средств в течение 24 часов, если бот не соответствует заявленному функционалу.</p>
+        </div>
+        
+        <div class="faq-item">
+          <h3 class="faq-question" data-i18n="faq.q6.question">Обновляются ли боты автоматически?</h3>
+          <p class="faq-answer" data-i18n="faq.q6.answer">Да, все обновления и исправления применяются автоматически без вашего участия. Вы всегда используете актуальную версию бота с новейшими функциями.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="contact.title">Свяжитесь с нами</h2>
+        <p class="section-description" data-i18n="contact.description">Выберите удобный способ связи</p>
+      </div>
+      
+      <div class="contact-grid">
+        <a href="#" class="contact-card" target="_blank" rel="noopener noreferrer">
+          <div class="contact-icon discord">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <h3 class="contact-name">Discord</h3>
+            <p class="contact-desc" data-i18n="contact.discord.description">Основной канал связи и поддержки</p>
+          </div>
+        </a>
+        
+        <a href="#" class="contact-card" target="_blank" rel="noopener noreferrer">
+          <div class="contact-icon telegram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <h3 class="contact-name">Telegram</h3>
+            <p class="contact-desc" data-i18n="contact.telegram.description">Личные сообщения и консультации</p>
+          </div>
+        </a>
+      </div>
+      
+      <div class="work-hours">
+        <div class="work-hours-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <div class="work-hours-text">
+          <span data-i18n="contact.workHours">Пн-Вс, без выходных</span>
+          <span class="work-hours-note" data-i18n="contact.nightReleases">Ночные релизы — по запросу</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span>ave production</span>
+          </a>
+          <p class="footer-description" data-i18n="footer.description">Профессиональные Discord-боты и скрипты для Majestic RP</p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#products" data-i18n="nav.products">Продукты</a>
+          <a href="#features" data-i18n="nav.features">Преимущества</a>
+          <a href="#how-it-works" data-i18n="nav.howItWorks">Подключение</a>
+          <a href="#contact" data-i18n="nav.contact">Контакты</a>
+        </div>
+        
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Discord">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 ave production. <span data-i18n="footer.rights">Все права защищены.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-brand">AVE PRODUCTION</span>
+          <h2 class="modal-title" id="modalTitle">Family Bot</h2>
+          <p class="modal-subtitle" id="modalSubtitle">Подписка на 1 месяц</p>
+        </div>
+        
+        <div class="modal-body">
+          <h3 class="modal-section-title" data-i18n="modal.whatsIncluded">Что входит</h3>
+          <ul class="modal-features" id="modalFeatures">
+            <li>Управление составом семьи</li>
+            <li>Система казны и логов</li>
+            <li>Автоматические роли</li>
+          </ul>
+          
+          <h3 class="modal-section-title modal-section-title-small" data-i18n="modal.howToGet">КАК ПОЛУЧИТЬ СКРИПТ</h3>
+          
+          <div class="modal-steps">
+            <div class="modal-step">
+              <div class="modal-step-number">1</div>
+              <div class="modal-step-content">
+                <h4 data-i18n="modal.step1.title">Заходите в Discord</h4>
+                <p data-i18n="modal.step1.description">Присоединяйтесь к нашему серверу и получайте доступ к каталогу скриптов</p>
+              </div>
+            </div>
+            <div class="modal-step">
+              <div class="modal-step-number">2</div>
+              <div class="modal-step-content">
+                <h4 data-i18n="modal.step2.title">Создаете тикет в #buy-script</h4>
+                <p data-i18n="modal.step2.description">Указываете желаемый скрипт и автоматически попадаете в приватный диалог с поддержкой</p>
+              </div>
+            </div>
+            <div class="modal-step">
+              <div class="modal-step-number">3</div>
+              <div class="modal-step-content">
+                <h4 data-i18n="modal.step3.title">Получаете бота и гарантию</h4>
+                <p data-i18n="modal.step3.description">Выдаем инструкцию, подключаем бота, проверяем логи и даем гарантию работоспособности</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-contact-section">
+            <h3 class="modal-section-title modal-section-title-small" data-i18n="modal.additionalContact">ДОПОЛНИТЕЛЬНАЯ СВЯЗЬ</h3>
+            <div class="modal-contact-buttons">
+              <a href="#" class="modal-contact-btn discord">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+                Discord
+              </a>
+              <a href="#" class="modal-contact-btn telegram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+                Telegram
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button class="modal-close-btn" id="modalCloseBtn" data-i18n="modal.close">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
