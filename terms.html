@@ -48,10 +48,31 @@
         grid-template-columns: 1fr;
       }
     }
+    .back-button {
+  position: fixed;
+  top: 32px;
+  left: 32px;
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+.back-button:hover {
+  opacity: 1;
+  transform: translateX(-2px);
+}
+
   </style>
 </head>
 
 <body>
+  <a href="index.html" class="back-button" onclick="history.length > 1 && history.back(); return false;">
+  ← Back to main site
+  </a>
+
 
 <section class="legal-container">
   <div class="legal-title">
